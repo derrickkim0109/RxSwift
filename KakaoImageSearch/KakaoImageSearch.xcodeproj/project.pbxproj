@@ -1,0 +1,746 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		66F344280DFBF8F285D19051 /* Pods_KakaoImageSearch_KakaoImageSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C7D19A20AB2CE1415E22D3 /* Pods_KakaoImageSearch_KakaoImageSearchTests.framework */; };
+		A82A228E25F65D1E008CD186 /* ImageServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B106C825F5CD3700489FAA /* ImageServiceTests.swift */; };
+		A82A229825F65DAC008CD186 /* SessionManagerStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B106AD25F5CBC700489FAA /* SessionManagerStub.swift */; };
+		A82A229B25F65E39008CD186 /* ImageServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82A229A25F65E39008CD186 /* ImageServiceProtocol.swift */; };
+		A8AEDFB025F0CD3F006F58D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AEDFAF25F0CD3F006F58D3 /* AppDelegate.swift */; };
+		A8AEDFB425F0CD3F006F58D3 /* SearchImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AEDFB325F0CD3F006F58D3 /* SearchImageViewController.swift */; };
+		A8AEDFB725F0CD3F006F58D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8AEDFB525F0CD3F006F58D3 /* Main.storyboard */; };
+		A8AEDFB925F0CD41006F58D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8AEDFB825F0CD41006F58D3 /* Assets.xcassets */; };
+		A8AEDFBC25F0CD41006F58D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8AEDFBA25F0CD41006F58D3 /* LaunchScreen.storyboard */; };
+		A8B105F525F1647900489FAA /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B105F425F1647900489FAA /* ImageService.swift */; };
+		A8B1060825F205E400489FAA /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B1060725F205E400489FAA /* ImageCollectionViewCell.swift */; };
+		A8B1060F25F20A0E00489FAA /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8B1060D25F20A0E00489FAA /* ImageCollectionViewCell.xib */; };
+		A8B1061D25F225B100489FAA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B1061C25F225B100489FAA /* DetailViewController.swift */; };
+		A8B1062E25F2ECAB00489FAA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B1062D25F2ECAB00489FAA /* Utils.swift */; };
+		A8B1063F25F31F4C00489FAA /* ImageItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B1063E25F31F4C00489FAA /* ImageItemsViewModel.swift */; };
+		A8B1069525F57B8E00489FAA /* ImageSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B1069425F57B8E00489FAA /* ImageSearchResult.swift */; };
+		A8B1069A25F57B9C00489FAA /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B1069925F57B9C00489FAA /* Document.swift */; };
+		A8B106A525F57C4F00489FAA /* SessionManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B106A425F57C4F00489FAA /* SessionManagerProtocol.swift */; };
+		A8B106DC25F5D11B00489FAA /* Pods_KakaoImageSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6E17DFBE9CEF5426FEABAD /* Pods_KakaoImageSearch.framework */; };
+		A8B106DD25F5D11B00489FAA /* Pods_KakaoImageSearch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6E17DFBE9CEF5426FEABAD /* Pods_KakaoImageSearch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A82A228425F65B67008CD186 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8AEDFA425F0CD3F006F58D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8AEDFAB25F0CD3F006F58D3;
+			remoteInfo = KakaoImageSearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A8B106DE25F5D11B00489FAA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A8B106DD25F5D11B00489FAA /* Pods_KakaoImageSearch.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		07C7D19A20AB2CE1415E22D3 /* Pods_KakaoImageSearch_KakaoImageSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaoImageSearch_KakaoImageSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25ABCECA0D325B428E422824 /* Pods-KakaoImageSearch-KakaoImageSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoImageSearch-KakaoImageSearchTests.release.xcconfig"; path = "Target Support Files/Pods-KakaoImageSearch-KakaoImageSearchTests/Pods-KakaoImageSearch-KakaoImageSearchTests.release.xcconfig"; sourceTree = "<group>"; };
+		3D6E17DFBE9CEF5426FEABAD /* Pods_KakaoImageSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaoImageSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4080C07BADB42545CC60B7C9 /* Pods-KakaoImageSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoImageSearch.debug.xcconfig"; path = "Target Support Files/Pods-KakaoImageSearch/Pods-KakaoImageSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		437AAA597BED813BCFE0F641 /* Pods-KakaoImageSearch-KakaoImageSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoImageSearch-KakaoImageSearchTests.debug.xcconfig"; path = "Target Support Files/Pods-KakaoImageSearch-KakaoImageSearchTests/Pods-KakaoImageSearch-KakaoImageSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A080B51571D4E5DE34E0A1EF /* Pods-KakaoImageSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoImageSearch.release.xcconfig"; path = "Target Support Files/Pods-KakaoImageSearch/Pods-KakaoImageSearch.release.xcconfig"; sourceTree = "<group>"; };
+		A82A227F25F65B67008CD186 /* KakaoImageSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KakaoImageSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A82A229A25F65E39008CD186 /* ImageServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageServiceProtocol.swift; sourceTree = "<group>"; };
+		A8AEDFAC25F0CD3F006F58D3 /* KakaoImageSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakaoImageSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8AEDFAF25F0CD3F006F58D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A8AEDFB325F0CD3F006F58D3 /* SearchImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchImageViewController.swift; sourceTree = "<group>"; };
+		A8AEDFB625F0CD3F006F58D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A8AEDFB825F0CD41006F58D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8AEDFBB25F0CD41006F58D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A8AEDFBD25F0CD41006F58D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8AEDFC825F0CD42006F58D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8B105F425F1647900489FAA /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		A8B1060725F205E400489FAA /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		A8B1060D25F20A0E00489FAA /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		A8B1061C25F225B100489FAA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A8B1062D25F2ECAB00489FAA /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		A8B1063E25F31F4C00489FAA /* ImageItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageItemsViewModel.swift; sourceTree = "<group>"; };
+		A8B1069425F57B8E00489FAA /* ImageSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchResult.swift; sourceTree = "<group>"; };
+		A8B1069925F57B9C00489FAA /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		A8B106A425F57C4F00489FAA /* SessionManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManagerProtocol.swift; sourceTree = "<group>"; };
+		A8B106AD25F5CBC700489FAA /* SessionManagerStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManagerStub.swift; sourceTree = "<group>"; };
+		A8B106C825F5CD3700489FAA /* ImageServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageServiceTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A82A227C25F65B67008CD186 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66F344280DFBF8F285D19051 /* Pods_KakaoImageSearch_KakaoImageSearchTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8AEDFA925F0CD3F006F58D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8B106DC25F5D11B00489FAA /* Pods_KakaoImageSearch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A76B0E51EC7B2C863F378601 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D6E17DFBE9CEF5426FEABAD /* Pods_KakaoImageSearch.framework */,
+				07C7D19A20AB2CE1415E22D3 /* Pods_KakaoImageSearch_KakaoImageSearchTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A82A224725F659C4008CD186 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A82A224825F659CD008CD186 /* Networking */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		A82A224825F659CD008CD186 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A8B106AD25F5CBC700489FAA /* SessionManagerStub.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A82A224C25F659EE008CD186 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A8B106C825F5CD3700489FAA /* ImageServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A82A224F25F65A02008CD186 /* Supprting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8AEDFC825F0CD42006F58D3 /* Info.plist */,
+			);
+			path = "Supprting Files";
+			sourceTree = "<group>";
+		};
+		A82A228025F65B67008CD186 /* KakaoImageSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				A82A224725F659C4008CD186 /* Mocks */,
+				A82A224C25F659EE008CD186 /* Services */,
+				A82A224F25F65A02008CD186 /* Supprting Files */,
+			);
+			path = KakaoImageSearchTests;
+			sourceTree = "<group>";
+		};
+		A8AEDFA325F0CD3F006F58D3 = {
+			isa = PBXGroup;
+			children = (
+				A8AEDFAE25F0CD3F006F58D3 /* KakaoImageSearch */,
+				A82A228025F65B67008CD186 /* KakaoImageSearchTests */,
+				A8AEDFAD25F0CD3F006F58D3 /* Products */,
+				EFA51087C64F04AEA7BD0B72 /* Pods */,
+				A76B0E51EC7B2C863F378601 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A8AEDFAD25F0CD3F006F58D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8AEDFAC25F0CD3F006F58D3 /* KakaoImageSearch.app */,
+				A82A227F25F65B67008CD186 /* KakaoImageSearchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8AEDFAE25F0CD3F006F58D3 /* KakaoImageSearch */ = {
+			isa = PBXGroup;
+			children = (
+				A8AEDFED25F15DCD006F58D3 /* App */,
+				A8AEDFF425F15DDE006F58D3 /* View */,
+				A8B1064325F31F5400489FAA /* ViewModel */,
+				A8B105F025F1623300489FAA /* Model */,
+				A8B105F925F1647E00489FAA /* Service */,
+				A8B1063225F2ECAE00489FAA /* Utils */,
+				A8B106A925F57C5200489FAA /* Protocols */,
+			);
+			path = KakaoImageSearch;
+			sourceTree = "<group>";
+		};
+		A8AEDFEC25F15DC0006F58D3 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				A8AEDFB525F0CD3F006F58D3 /* Main.storyboard */,
+				A8AEDFB825F0CD41006F58D3 /* Assets.xcassets */,
+				A8AEDFBA25F0CD41006F58D3 /* LaunchScreen.storyboard */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		A8AEDFED25F15DCD006F58D3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A8AEDFEC25F15DC0006F58D3 /* Asset */,
+				A8AEDFAF25F0CD3F006F58D3 /* AppDelegate.swift */,
+				A8AEDFBD25F0CD41006F58D3 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A8AEDFF425F15DDE006F58D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8AEDFB325F0CD3F006F58D3 /* SearchImageViewController.swift */,
+				A8B1061C25F225B100489FAA /* DetailViewController.swift */,
+				A8B1060725F205E400489FAA /* ImageCollectionViewCell.swift */,
+				A8B1060D25F20A0E00489FAA /* ImageCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A8B105F025F1623300489FAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A8B1069425F57B8E00489FAA /* ImageSearchResult.swift */,
+				A8B1069925F57B9C00489FAA /* Document.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A8B105F925F1647E00489FAA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A8B105F425F1647900489FAA /* ImageService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A8B1063225F2ECAE00489FAA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A8B1062D25F2ECAB00489FAA /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A8B1064325F31F5400489FAA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A8B1063E25F31F4C00489FAA /* ImageItemsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A8B106A925F57C5200489FAA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A8B106A425F57C4F00489FAA /* SessionManagerProtocol.swift */,
+				A82A229A25F65E39008CD186 /* ImageServiceProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		EFA51087C64F04AEA7BD0B72 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4080C07BADB42545CC60B7C9 /* Pods-KakaoImageSearch.debug.xcconfig */,
+				A080B51571D4E5DE34E0A1EF /* Pods-KakaoImageSearch.release.xcconfig */,
+				437AAA597BED813BCFE0F641 /* Pods-KakaoImageSearch-KakaoImageSearchTests.debug.xcconfig */,
+				25ABCECA0D325B428E422824 /* Pods-KakaoImageSearch-KakaoImageSearchTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A82A227E25F65B67008CD186 /* KakaoImageSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A82A228625F65B67008CD186 /* Build configuration list for PBXNativeTarget "KakaoImageSearchTests" */;
+			buildPhases = (
+				D305C93E537FD7927AC63B53 /* [CP] Check Pods Manifest.lock */,
+				A82A227B25F65B67008CD186 /* Sources */,
+				A82A227C25F65B67008CD186 /* Frameworks */,
+				A82A227D25F65B67008CD186 /* Resources */,
+				74F68C9F873A8C9998975346 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A82A228525F65B67008CD186 /* PBXTargetDependency */,
+			);
+			name = KakaoImageSearchTests;
+			productName = KakaoImageSearchTests;
+			productReference = A82A227F25F65B67008CD186 /* KakaoImageSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A8AEDFAB25F0CD3F006F58D3 /* KakaoImageSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8AEDFD625F0CD42006F58D3 /* Build configuration list for PBXNativeTarget "KakaoImageSearch" */;
+			buildPhases = (
+				4D1D586F5F8E66A040D447BB /* [CP] Check Pods Manifest.lock */,
+				A8AEDFA825F0CD3F006F58D3 /* Sources */,
+				A8AEDFA925F0CD3F006F58D3 /* Frameworks */,
+				A8AEDFAA25F0CD3F006F58D3 /* Resources */,
+				2AD243803C4416C3BEABE149 /* [CP] Embed Pods Frameworks */,
+				A8B106DE25F5D11B00489FAA /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KakaoImageSearch;
+			productName = KakaoImageSearch;
+			productReference = A8AEDFAC25F0CD3F006F58D3 /* KakaoImageSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8AEDFA425F0CD3F006F58D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					A82A227E25F65B67008CD186 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = A8AEDFAB25F0CD3F006F58D3;
+					};
+					A8AEDFAB25F0CD3F006F58D3 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = A8AEDFA725F0CD3F006F58D3 /* Build configuration list for PBXProject "KakaoImageSearch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8AEDFA325F0CD3F006F58D3;
+			productRefGroup = A8AEDFAD25F0CD3F006F58D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8AEDFAB25F0CD3F006F58D3 /* KakaoImageSearch */,
+				A82A227E25F65B67008CD186 /* KakaoImageSearchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A82A227D25F65B67008CD186 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8AEDFAA25F0CD3F006F58D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8AEDFBC25F0CD41006F58D3 /* LaunchScreen.storyboard in Resources */,
+				A8AEDFB925F0CD41006F58D3 /* Assets.xcassets in Resources */,
+				A8B1060F25F20A0E00489FAA /* ImageCollectionViewCell.xib in Resources */,
+				A8AEDFB725F0CD3F006F58D3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2AD243803C4416C3BEABE149 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoImageSearch/Pods-KakaoImageSearch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoImageSearch/Pods-KakaoImageSearch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KakaoImageSearch/Pods-KakaoImageSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D1D586F5F8E66A040D447BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KakaoImageSearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74F68C9F873A8C9998975346 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoImageSearch-KakaoImageSearchTests/Pods-KakaoImageSearch-KakaoImageSearchTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoImageSearch-KakaoImageSearchTests/Pods-KakaoImageSearch-KakaoImageSearchTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KakaoImageSearch-KakaoImageSearchTests/Pods-KakaoImageSearch-KakaoImageSearchTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D305C93E537FD7927AC63B53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KakaoImageSearch-KakaoImageSearchTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A82A227B25F65B67008CD186 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A82A229825F65DAC008CD186 /* SessionManagerStub.swift in Sources */,
+				A82A228E25F65D1E008CD186 /* ImageServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8AEDFA825F0CD3F006F58D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A82A229B25F65E39008CD186 /* ImageServiceProtocol.swift in Sources */,
+				A8B106A525F57C4F00489FAA /* SessionManagerProtocol.swift in Sources */,
+				A8B1069525F57B8E00489FAA /* ImageSearchResult.swift in Sources */,
+				A8B1060825F205E400489FAA /* ImageCollectionViewCell.swift in Sources */,
+				A8AEDFB425F0CD3F006F58D3 /* SearchImageViewController.swift in Sources */,
+				A8B1069A25F57B9C00489FAA /* Document.swift in Sources */,
+				A8B1062E25F2ECAB00489FAA /* Utils.swift in Sources */,
+				A8B1061D25F225B100489FAA /* DetailViewController.swift in Sources */,
+				A8B105F525F1647900489FAA /* ImageService.swift in Sources */,
+				A8B1063F25F31F4C00489FAA /* ImageItemsViewModel.swift in Sources */,
+				A8AEDFB025F0CD3F006F58D3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A82A228525F65B67008CD186 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8AEDFAB25F0CD3F006F58D3 /* KakaoImageSearch */;
+			targetProxy = A82A228425F65B67008CD186 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A8AEDFB525F0CD3F006F58D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8AEDFB625F0CD3F006F58D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A8AEDFBA25F0CD41006F58D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8AEDFBB25F0CD41006F58D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A82A228725F65B67008CD186 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 437AAA597BED813BCFE0F641 /* Pods-KakaoImageSearch-KakaoImageSearchTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HBXK2UB5Z3;
+				INFOPLIST_FILE = "KakaoImageSearchTests/Supprting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bcmbf14.KakaoImageSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KakaoImageSearch.app/KakaoImageSearch";
+			};
+			name = Debug;
+		};
+		A82A228825F65B67008CD186 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25ABCECA0D325B428E422824 /* Pods-KakaoImageSearch-KakaoImageSearchTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HBXK2UB5Z3;
+				INFOPLIST_FILE = "KakaoImageSearchTests/Supprting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bcmbf14.KakaoImageSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KakaoImageSearch.app/KakaoImageSearch";
+			};
+			name = Release;
+		};
+		A8AEDFD425F0CD42006F58D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A8AEDFD525F0CD42006F58D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A8AEDFD725F0CD42006F58D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4080C07BADB42545CC60B7C9 /* Pods-KakaoImageSearch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HBXK2UB5Z3;
+				INFOPLIST_FILE = KakaoImageSearch/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bcmbf14.KakaoImageSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A8AEDFD825F0CD42006F58D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A080B51571D4E5DE34E0A1EF /* Pods-KakaoImageSearch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HBXK2UB5Z3;
+				INFOPLIST_FILE = KakaoImageSearch/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bcmbf14.KakaoImageSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A82A228625F65B67008CD186 /* Build configuration list for PBXNativeTarget "KakaoImageSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A82A228725F65B67008CD186 /* Debug */,
+				A82A228825F65B67008CD186 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8AEDFA725F0CD3F006F58D3 /* Build configuration list for PBXProject "KakaoImageSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8AEDFD425F0CD42006F58D3 /* Debug */,
+				A8AEDFD525F0CD42006F58D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8AEDFD625F0CD42006F58D3 /* Build configuration list for PBXNativeTarget "KakaoImageSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8AEDFD725F0CD42006F58D3 /* Debug */,
+				A8AEDFD825F0CD42006F58D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A8AEDFA425F0CD3F006F58D3 /* Project object */;
+}

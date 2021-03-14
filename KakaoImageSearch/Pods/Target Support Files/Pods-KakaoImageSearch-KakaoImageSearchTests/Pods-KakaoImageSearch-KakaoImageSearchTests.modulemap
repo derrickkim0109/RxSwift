@@ -1,0 +1,6 @@
+framework module Pods_KakaoImageSearch_KakaoImageSearchTests {
+  umbrella header "Pods-KakaoImageSearch-KakaoImageSearchTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
